@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E6C052E2CCE75A9000EDB26 /* IbanScanDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C052D2CCE75A9000EDB26 /* IbanScanDemoApp.swift */; };
-		3E6C05302CCE75A9000EDB26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C052F2CCE75A9000EDB26 /* ContentView.swift */; };
+		3E37B47A2CCE88AA00AD3ED2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37B4792CCE88AA00AD3ED2 /* AppCoordinator.swift */; };
+		3E37B47C2CCE88C800AD3ED2 /* AddBeneficiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37B47B2CCE88C800AD3ED2 /* AddBeneficiaryViewModel.swift */; };
+		3E37B47E2CCE891A00AD3ED2 /* AddBeneficiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37B47D2CCE891A00AD3ED2 /* AddBeneficiaryView.swift */; };
+		3E4915112CCEE3ED00BF2CCC /* IbanScanDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C052D2CCE75A9000EDB26 /* IbanScanDemoApp.swift */; };
+		3E4915122CCEE3F000BF2CCC /* IBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E19549A2CCEC37E00F621AB /* IBAN.swift */; };
+		3E4915132CCEE3F300BF2CCC /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1954982CCEC14A00F621AB /* CameraView.swift */; };
+		3E4915142CCEE3F700BF2CCC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1954962CCEC0FB00F621AB /* CameraViewController.swift */; };
+		3E4915152CCEE3FA00BF2CCC /* ScanIBANView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37B4812CCE89CF00AD3ED2 /* ScanIBANView.swift */; };
+		3E4915162CCEE3FE00BF2CCC /* ScanIBANViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37B47F2CCE897700AD3ED2 /* ScanIBANViewModel.swift */; };
 		3E6C05322CCE75AB000EDB26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E6C05312CCE75AB000EDB26 /* Assets.xcassets */; };
 		3E6C05352CCE75AB000EDB26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E6C05342CCE75AB000EDB26 /* Preview Assets.xcassets */; };
 		3E6C053F2CCE75AB000EDB26 /* IbanScanDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C053E2CCE75AB000EDB26 /* IbanScanDemoTests.swift */; };
@@ -34,9 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E1954962CCEC0FB00F621AB /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		3E1954982CCEC14A00F621AB /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		3E19549A2CCEC37E00F621AB /* IBAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBAN.swift; sourceTree = "<group>"; };
+		3E37B4792CCE88AA00AD3ED2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3E37B47B2CCE88C800AD3ED2 /* AddBeneficiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBeneficiaryViewModel.swift; sourceTree = "<group>"; };
+		3E37B47D2CCE891A00AD3ED2 /* AddBeneficiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBeneficiaryView.swift; sourceTree = "<group>"; };
+		3E37B47F2CCE897700AD3ED2 /* ScanIBANViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanIBANViewModel.swift; sourceTree = "<group>"; };
+		3E37B4812CCE89CF00AD3ED2 /* ScanIBANView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanIBANView.swift; sourceTree = "<group>"; };
 		3E6C052A2CCE75A9000EDB26 /* IbanScanDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IbanScanDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6C052D2CCE75A9000EDB26 /* IbanScanDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanScanDemoApp.swift; sourceTree = "<group>"; };
-		3E6C052F2CCE75A9000EDB26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3E6C05312CCE75AB000EDB26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E6C05342CCE75AB000EDB26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E6C053A2CCE75AB000EDB26 /* IbanScanDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IbanScanDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +85,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E49150B2CCEE2DE00BF2CCC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3E49150D2CCEE2EC00BF2CCC /* AddBeneficiary */,
+				3E49150C2CCEE2E700BF2CCC /* ScanIBAN */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3E49150C2CCEE2E700BF2CCC /* ScanIBAN */ = {
+			isa = PBXGroup;
+			children = (
+				3E4915192CCEE41500BF2CCC /* Views */,
+				3E4915182CCEE41200BF2CCC /* ViewModels */,
+				3E4915172CCEE40E00BF2CCC /* Models */,
+			);
+			path = ScanIBAN;
+			sourceTree = "<group>";
+		};
+		3E49150D2CCEE2EC00BF2CCC /* AddBeneficiary */ = {
+			isa = PBXGroup;
+			children = (
+				3E4915102CCEE35100BF2CCC /* Views */,
+				3E49150F2CCEE34D00BF2CCC /* ViewModels */,
+			);
+			path = AddBeneficiary;
+			sourceTree = "<group>";
+		};
+		3E49150F2CCEE34D00BF2CCC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3E37B47B2CCE88C800AD3ED2 /* AddBeneficiaryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3E4915102CCEE35100BF2CCC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E37B47D2CCE891A00AD3ED2 /* AddBeneficiaryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3E4915172CCEE40E00BF2CCC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E19549A2CCEC37E00F621AB /* IBAN.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3E4915182CCEE41200BF2CCC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3E37B47F2CCE897700AD3ED2 /* ScanIBANViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3E4915192CCEE41500BF2CCC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E37B4812CCE89CF00AD3ED2 /* ScanIBANView.swift */,
+				3E1954982CCEC14A00F621AB /* CameraView.swift */,
+				3E1954962CCEC0FB00F621AB /* CameraViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3E6C05212CCE75A9000EDB26 = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				3E6C052D2CCE75A9000EDB26 /* IbanScanDemoApp.swift */,
-				3E6C052F2CCE75A9000EDB26 /* ContentView.swift */,
+				3E37B4792CCE88AA00AD3ED2 /* AppCoordinator.swift */,
+				3E49150B2CCEE2DE00BF2CCC /* Modules */,
 				3E6C05312CCE75AB000EDB26 /* Assets.xcassets */,
 				3E6C05332CCE75AB000EDB26 /* Preview Content */,
 			);
@@ -257,8 +342,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E6C05302CCE75A9000EDB26 /* ContentView.swift in Sources */,
-				3E6C052E2CCE75A9000EDB26 /* IbanScanDemoApp.swift in Sources */,
+				3E37B47A2CCE88AA00AD3ED2 /* AppCoordinator.swift in Sources */,
+				3E4915122CCEE3F000BF2CCC /* IBAN.swift in Sources */,
+				3E4915162CCEE3FE00BF2CCC /* ScanIBANViewModel.swift in Sources */,
+				3E4915112CCEE3ED00BF2CCC /* IbanScanDemoApp.swift in Sources */,
+				3E4915132CCEE3F300BF2CCC /* CameraView.swift in Sources */,
+				3E4915142CCEE3F700BF2CCC /* CameraViewController.swift in Sources */,
+				3E37B47E2CCE891A00AD3ED2 /* AddBeneficiaryView.swift in Sources */,
+				3E37B47C2CCE88C800AD3ED2 /* AddBeneficiaryViewModel.swift in Sources */,
+				3E4915152CCEE3FA00BF2CCC /* ScanIBANView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +496,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -425,6 +517,7 @@
 				DEVELOPMENT_TEAM = Q8QU27L3SV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "L'application a besoin d'accéder à la caméra pour scanner votre IBAN.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +547,7 @@
 				DEVELOPMENT_TEAM = Q8QU27L3SV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "L'application a besoin d'accéder à la caméra pour scanner votre IBAN.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -480,7 +574,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aladdindev.IbanScanDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -499,7 +593,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aladdindev.IbanScanDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
