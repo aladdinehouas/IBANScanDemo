@@ -17,9 +17,10 @@
 		3E4915152CCEE3FA00BF2CCC /* ScanIBANView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37B4812CCE89CF00AD3ED2 /* ScanIBANView.swift */; };
 		3E4915162CCEE3FE00BF2CCC /* ScanIBANViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37B47F2CCE897700AD3ED2 /* ScanIBANViewModel.swift */; };
 		3E5924E22CCFB44C004ADC39 /* ValidationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5924E12CCFB44C004ADC39 /* ValidationSheet.swift */; };
+		3E5924E42CCFE00B004ADC39 /* MockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5924E32CCFE00B004ADC39 /* MockCoordinator.swift */; };
+		3E5924E62CCFE040004ADC39 /* ScanIBANViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5924E52CCFE040004ADC39 /* ScanIBANViewModelTests.swift */; };
 		3E6C05322CCE75AB000EDB26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E6C05312CCE75AB000EDB26 /* Assets.xcassets */; };
 		3E6C05352CCE75AB000EDB26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E6C05342CCE75AB000EDB26 /* Preview Assets.xcassets */; };
-		3E6C053F2CCE75AB000EDB26 /* IbanScanDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C053E2CCE75AB000EDB26 /* IbanScanDemoTests.swift */; };
 		3E6C05492CCE75AB000EDB26 /* IbanScanDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C05482CCE75AB000EDB26 /* IbanScanDemoUITests.swift */; };
 		3E6C054B2CCE75AB000EDB26 /* IbanScanDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C054A2CCE75AB000EDB26 /* IbanScanDemoUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -51,12 +52,13 @@
 		3E37B47F2CCE897700AD3ED2 /* ScanIBANViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanIBANViewModel.swift; sourceTree = "<group>"; };
 		3E37B4812CCE89CF00AD3ED2 /* ScanIBANView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanIBANView.swift; sourceTree = "<group>"; };
 		3E5924E12CCFB44C004ADC39 /* ValidationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationSheet.swift; sourceTree = "<group>"; };
+		3E5924E32CCFE00B004ADC39 /* MockCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoordinator.swift; sourceTree = "<group>"; };
+		3E5924E52CCFE040004ADC39 /* ScanIBANViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanIBANViewModelTests.swift; sourceTree = "<group>"; };
 		3E6C052A2CCE75A9000EDB26 /* IbanScanDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IbanScanDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6C052D2CCE75A9000EDB26 /* IbanScanDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanScanDemoApp.swift; sourceTree = "<group>"; };
 		3E6C05312CCE75AB000EDB26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E6C05342CCE75AB000EDB26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E6C053A2CCE75AB000EDB26 /* IbanScanDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IbanScanDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E6C053E2CCE75AB000EDB26 /* IbanScanDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanScanDemoTests.swift; sourceTree = "<group>"; };
 		3E6C05442CCE75AB000EDB26 /* IbanScanDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IbanScanDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6C05482CCE75AB000EDB26 /* IbanScanDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanScanDemoUITests.swift; sourceTree = "<group>"; };
 		3E6C054A2CCE75AB000EDB26 /* IbanScanDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanScanDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -201,7 +203,8 @@
 		3E6C053D2CCE75AB000EDB26 /* IbanScanDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				3E6C053E2CCE75AB000EDB26 /* IbanScanDemoTests.swift */,
+				3E5924E32CCFE00B004ADC39 /* MockCoordinator.swift */,
+				3E5924E52CCFE040004ADC39 /* ScanIBANViewModelTests.swift */,
 			);
 			path = IbanScanDemoTests;
 			sourceTree = "<group>";
@@ -362,7 +365,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E6C053F2CCE75AB000EDB26 /* IbanScanDemoTests.swift in Sources */,
+				3E5924E62CCFE040004ADC39 /* ScanIBANViewModelTests.swift in Sources */,
+				3E5924E42CCFE00B004ADC39 /* MockCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
