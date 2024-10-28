@@ -10,7 +10,7 @@ import AVFoundation
 import Vision
 
 struct CameraView: UIViewControllerRepresentable {
-    @Binding var detectedText: String
+    var onIbanDetected: (String) -> Void
 
     func makeUIViewController(context: Context) -> CameraViewController {
         let controller = CameraViewController()
@@ -32,7 +32,7 @@ struct CameraView: UIViewControllerRepresentable {
         }
 
         func cameraViewController(_ controller: CameraViewController, didDetect text: String) {
-            parent.detectedText = text
+            self.parent.onIbanDetected(text)
         }
     }
 }

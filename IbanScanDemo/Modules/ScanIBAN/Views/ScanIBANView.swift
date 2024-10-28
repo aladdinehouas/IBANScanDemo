@@ -6,37 +6,46 @@
 //
 
 import SwiftUI
-import AVFoundation
 
 struct ScanIBANView: View {
     @ObservedObject var viewModel: ScanIBANViewModel
-    @State private var detectedIBAN = ""
+    @State private var isValidationSheetPresented = false
+    @State private var detectedIBAN: String = ""
 
     var body: some View {
-        VStack {
-            Text("Scanner l'IBAN")
-                .font(.title)
-            
-            CameraView(detectedText: $detectedIBAN)
-                .frame(width: 300, height: 100)
-                .clipShape(RoundedRectangle(cornerRadius: 15))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 15)
-                        .stroke(Color.blue, lineWidth: 3)
-                )
-
-            Text("IBAN détecté: \(detectedIBAN)")
-                .padding()
-
-            Button("Valider") {
-                viewModel.validateIBAN(scannedText: detectedIBAN)
+        ZStack {
+            CameraView { iban in
+                self.detectedIBAN = iban
+                withAnimation {
+                    self.isValidationSheetPresented = true
+                }
             }
-            .disabled(detectedIBAN.isEmpty)
+            .frame(width: 300, height: 100)
+            .clipShape(RoundedRectangle(cornerRadius: 15))
+            .overlay(
+                RoundedRectangle(cornerRadius: 15)
+                    .stroke(Color.blue, lineWidth: 3)
+            )
 
-            Button("Recommencer") {
-                detectedIBAN = ""
-                viewModel.resetScanner()
+            if isValidationSheetPresented {
+                ValidationSheet(
+                    iban: detectedIBAN,
+                    onValidate: {
+                        viewModel.validateIBAN(scannedText: detectedIBAN)
+                        withAnimation {
+                            isValidationSheetPresented = false
+                        }
+                    },
+                    onRetry: {
+                        withAnimation {
+                            isValidationSheetPresented = false
+                        }
+                    }
+                )
+                .transition(.move(edge: .bottom))
+                .zIndex(1)
             }
         }
+        .ignoresSafeArea()
     }
 }
